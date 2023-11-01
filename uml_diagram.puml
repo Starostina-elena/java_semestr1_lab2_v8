@@ -1,0 +1,84 @@
+@startuml
+class moves.RockSlide {
+# String describe()
++ void applyOppEffects(Pokemon)
+}
+class pockemons.Pichu {
+}
+class moves.Rest {
+# String describe()
++ void applySelfEffects(Pokemon)
+}
+class pockemons.Raichu {
+}
+class moves.PowderSnow {
+# String describe()
++ void applyOppEffects(Pokemon)
+}
+class moves.Agility {
+# String describe()
++ void applySelfEffects(Pokemon)
+}
+class pockemons.Pikachu {
+}
+class moves.FireFang {
+# String describe()
++ void applyOppEffects(Pokemon)
+}
+class moves.ChargeBeam {
+# String describe()
++ void applySelfEffects(Pokemon)
+}
+class pockemons.Entei {
+}
+class moves.ThunderWave {
+# String describe()
+}
+class pockemons.Amaura {
+}
+class moves.StoneEdge {
+# String describe()
++ void applySelfEffects(Pokemon)
+}
+class pockemons.Aurorus {
+}
+class moves.SacredFire {
+# String describe()
++ void applyOppEffects(Pokemon)
+}
+class moves.Stomp {
+# String describe()
++ void applyOppEffects(Pokemon)
+}
+class Main {
++ {static} void main(String[])
+}
+class moves.Psychic {
+# String describe()
++ void applyOppEffects(Pokemon)
+}
+class moves.Facade {
+# String describe()
++ void applyOppDamage(Pokemon,double)
+}
+
+
+ru.ifmo.se.pokemon.PhysicalMove <|-- moves.RockSlide
+ru.ifmo.se.pokemon.Pokemon <|-- pockemons.Pichu
+ru.ifmo.se.pokemon.StatusMove <|-- moves.Rest
+pockemons.Pikachu <|-- pockemons.Raichu
+ru.ifmo.se.pokemon.SpecialMove <|-- moves.PowderSnow
+ru.ifmo.se.pokemon.StatusMove <|-- moves.Agility
+pockemons.Pichu <|-- pockemons.Pikachu
+ru.ifmo.se.pokemon.PhysicalMove <|-- moves.FireFang
+ru.ifmo.se.pokemon.SpecialMove <|-- moves.ChargeBeam
+ru.ifmo.se.pokemon.Pokemon <|-- pockemons.Entei
+ru.ifmo.se.pokemon.StatusMove <|-- moves.ThunderWave
+ru.ifmo.se.pokemon.Pokemon <|-- pockemons.Amaura
+ru.ifmo.se.pokemon.PhysicalMove <|-- moves.StoneEdge
+pockemons.Amaura <|-- pockemons.Aurorus
+ru.ifmo.se.pokemon.PhysicalMove <|-- moves.SacredFire
+ru.ifmo.se.pokemon.PhysicalMove <|-- moves.Stomp
+ru.ifmo.se.pokemon.SpecialMove <|-- moves.Psychic
+ru.ifmo.se.pokemon.PhysicalMove <|-- moves.Facade
+@enduml
